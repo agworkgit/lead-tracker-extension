@@ -45,6 +45,12 @@ The following image shows the web application's appearance and functionality:
 
 The following link will take you to the deployed webpage <https://agworkgit.github.io/lead-tracker-extension/>
 
+Paste in a copied link to save it, go to a lead page and press save tab to grab the link and double click if you wish to clear up the lead list.
+
+## Installation
+
+To install the extension, clone the repo to your machine and load it from Chrome's extension manager (dev mode must be ticked for this to work).
+
 ## License
 
 MIT License
