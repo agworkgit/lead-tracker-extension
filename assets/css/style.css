@@ -26,7 +26,7 @@ input:focus {
     outline: none;
 }
 
-#input-btn {
+#input-btn, #tab-btn {
     cursor: pointer;
     font-family: 'Sometype Mono', monospace;
     font-size: 0.75rem;
@@ -39,13 +39,13 @@ input:focus {
     padding: 10px;
 }
 
-#input-btn:hover {
+#input-btn:hover, #tab-btn:hover {
     border: 3px solid rgb(0, 196, 39);
     background-color: rgb(218, 255, 226);
     color: rgb(0, 196, 39);
 }
 
-#input-btn:active {
+#input-btn:active, #tab-btn:active {
     transform: scale(0.95);
     transition: 0.1s ease-in-out;
 }

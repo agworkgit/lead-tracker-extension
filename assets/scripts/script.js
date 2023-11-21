@@ -1,5 +1,6 @@
 const inputBtn = document.querySelector("#input-btn");
 const deleteBtn = document.querySelector("#delete-btn");
+const tabBtn = document.querySelector("#tab-btn");
 
 let myLeads = [];
 // myLeads = JSON.stringify(myLeads); // swap to string
@@ -48,3 +49,16 @@ deleteBtn.addEventListener("dblclick", function() {
     render(myLeads);
 });
 
+// tab btn event listener
+// chrome tab api
+//grab url of current tab below
+tabBtn.addEventListener("click", function() {
+/*     chrome.tabs.query({ currentWindow: true, active: true }, function (tabs) {
+        let activeTab = tabs[0];
+      }); */
+    chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+        myLeads.push(tabs[0].url);
+        localStorage.setItem("myLeads", JSON.stringify(myLeads));
+        render(myLeads);
+    })
+});
